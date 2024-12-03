@@ -18,7 +18,7 @@ class Core {
   }
 
   /**
-   * Method for mount the web part of application.
+   * Method for mounting the web part of the application.
    * @param DomNode
    */
   mount(DomNode: HTMLDivElement): void {
@@ -28,7 +28,7 @@ class Core {
   }
 
   /**
-   * The static method for setup the core of application.
+   * The static method is used to set up the core of the application.
    * @param component application
    */
   static setup(component: AppComponent): void {
