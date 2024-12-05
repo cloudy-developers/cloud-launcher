@@ -11,6 +11,15 @@ function createWindow(): void {
     show: false,
     autoHideMenuBar: true,
     resizable: false,
+    maximizable: false,
+    fullscreen: false,
+    fullscreenable: false,
+    frame: false,
+    titleBarStyle: 'hidden',
+    titleBarOverlay: {
+      color: '#151515',
+      symbolColor: '#ffffff'
+    },
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
