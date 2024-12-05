@@ -22,4 +22,12 @@ body,
   background-color: var(--color-background-primary) !important;
   color: #ffffff !important;
   overflow-x: hidden;
+  position: relative;
+}
+
+#titlebar {
+  width: 100%;
+  height: 2rem;
+  app-region: drag;
+  position: absolute;
 }
