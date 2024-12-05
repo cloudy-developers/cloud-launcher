@@ -20,7 +20,7 @@ function createWindow(): void {
       color: '#151515',
       symbolColor: '#ffffff'
     },
-    ...(process.platform === 'linux' ? { icon } : {}),
+    icon: icon,
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: false
